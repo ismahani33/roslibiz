@@ -1,11 +1,12 @@
-package com.example.roslibiz
+package com.example.roslibiz.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.roslibiz.R
 
-class MainActivity : AppCompatActivity() {
+class InventoryMainpageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_inventory_mainpage)
     }
 }

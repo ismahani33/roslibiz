@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">roslibiz</string>
+    <string name="welcome">Perusahaan Rosli</string>
+    <string name="barcode_choose">Pilih tindakan seterusnya</string>
+    <string name="barcode_scan">Tekan untuk imbas kod bar</string>
+
 </resources>

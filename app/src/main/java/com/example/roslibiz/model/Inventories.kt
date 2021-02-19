@@ -1,3 +1,6 @@
 package com.example.roslibiz.model
 
-class Inventories : ArrayList<InventoriesItem>()
+class Inventories(){
+    val items: List<Inventories>? = null
+
+}

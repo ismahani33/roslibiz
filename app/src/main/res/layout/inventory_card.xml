@@ -2,12 +2,13 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/inventoryCardView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:clickable="true"
@@ -15,13 +16,13 @@
         card_view:cardCornerRadius="2dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
                 <ImageView
                     android:layout_margin="8dp"
-                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
                     android:id="@+id/stokIV"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -39,7 +40,7 @@
                     android:id="@+id/namaStokRV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama"
+                    tools:text="Nama"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
 
@@ -48,7 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Kategori"
+                    tools:text="Kategori"
                     android:textSize="20sp"/>
 
                 <LinearLayout
@@ -64,39 +65,30 @@
                         android:textSize="20sp"/>
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/hargaStokRV"
                         android:layout_marginStart="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5"
+                        tools:text="5"
                         android:textSize="20sp"/>
 
                 </LinearLayout>
 
-
-
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_margin="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:layout_gravity="center">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/kuantitiStokRV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5"
+                        tools:text="5"
                         android:textSize="30sp"
                         android:textColor="@color/brown_243"/>
                     <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/unitStokRV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -104,17 +96,6 @@
                         android:textSize="30sp"
                         android:textColor="@color/brown_243"/>
                 </LinearLayout>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:layout_marginTop="8dp"
-                        android:id="@+id/lowStockTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Stok Rendah"
-                        android:textSize="20sp"
-                        android:textStyle="bold"/>
-
-            </LinearLayout>
 
         </LinearLayout>
 

@@ -13,15 +13,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val butonStok = findViewById<CardView>(R.id.stokCard).setOnClickListener {
+        findViewById<CardView>(R.id.stokCard).setOnClickListener {
             val intent = Intent(this, InventoryMainpageActivity::class.java)
             startActivity(intent)
         }
-        val butonHasil = findViewById<CardView>(R.id.hasilCard).setOnClickListener{
+        findViewById<CardView>(R.id.hasilCard).setOnClickListener{
             val intent = Intent(this, SalesMainpageActivity::class.java)
             startActivity(intent)
         }
-        val butonBelanja = findViewById<CardView>(R.id.belanjaCard).setOnClickListener{
+        findViewById<CardView>(R.id.belanjaCard).setOnClickListener{
             val intent = Intent(this, ExpensesMainpageActivity::class.java)
             startActivity(intent)
         }
@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
 
 
         //fab main barcode button
-        val butonBarcode = findViewById<CardView>(R.id.barcodeBtnMain).setOnClickListener{
+        //val butonBarcode = findViewById<CardView>(R.id.barcodeBtnMain).setOnClickListener{
 
-        }
+        //}
 
     }
 }

@@ -3,5 +3,7 @@
     <string name="welcome">Perusahaan Rosli</string>
     <string name="barcode_choose">Pilih tindakan seterusnya</string>
     <string name="barcode_scan">Tekan untuk imbas kod bar</string>
+    <string name="cukup">Stok Cukup</string>
+    <string name="kurang">Stok Kurang</string>
 
 </resources>
